@@ -1,3 +1,21 @@
+# --- ML & data artifacts ---
+artifacts/
+models/
+*.h5
+*.pkl
+*.joblib
+*.ckpt
+
+# --- Data files ---
+data/
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.parquet
+*.zip
+*.gz
+
 # --- Python ---
 __pycache__/
 *.py[cod]
