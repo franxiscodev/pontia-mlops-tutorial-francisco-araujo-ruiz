@@ -17,7 +17,7 @@ run_id = os.getenv('RUN_ID', 'run_id not found')
 model_name = os.getenv("MODEL_NAME", "no_name")
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODEL_DIR = PROJECT_ROOT / "models"
-model_artifact_path = MODEL_DIR / "model.pkl"
+# model_artifact_path = MODEL_DIR / "model.pkl"
 
 # Register the model
 result = mlflow.register_model(
