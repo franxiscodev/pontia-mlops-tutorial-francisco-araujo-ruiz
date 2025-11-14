@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 # Set the tracking URI if it's not the default
-mlflow.set_tracking_uri(os.getenv("MLFLOW_URI", "no_url_found"))
+mlflow.set_tracking_uri(os.getenv("MLFLOW_URL", "no_url_found"))
 
 client = MlflowClient()
 
@@ -21,7 +21,7 @@ MODEL_DIR = PROJECT_ROOT / "models"
 
 # Register the model
 result = mlflow.register_model(
-    model_uri=f"runs:/{run_id}/{model_artifact_path}",
+    model_uri=f"runs:/{run_id}/model",
     name=model_name
 )
 
